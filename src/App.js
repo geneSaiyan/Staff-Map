@@ -1,13 +1,22 @@
-import React from "react";
-import Test from "./components/Test"
+import React, { Component } from "react";
+import SearchEmployees from "./components/SearchEmployees"
+import Employees from "./components/Employees"
+import employeesJSON from "./employees.json";
 
 
-function App() {
+class App extends Component {
+
+
+  render() {
   return (
     <div>
-     <Test></Test>
+     <SearchEmployees></SearchEmployees>
+     <Employees>
+
+     </Employees>
     </div>
   );
+  }
 }
 
 export default App;

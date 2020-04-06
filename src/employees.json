@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Goku",
+        "image": "https://media.interaksyon.com/wp-content/uploads/2020/01/Son-Goku-640x427.jpg",
+        "occupation": "Software Developer",
+        "location": "Earth"
+      },
+      {
+        "id": 2,
+        "name": "Vegeta",
+        "image": "https://media.comicbook.com/2018/03/vegeta3-1092181-1280x0.jpeg",
+        "occupation": "Database Administrator",
+        "location": "Planet Vegeta"
+      }
+]
