@@ -1,34 +1,50 @@
-import React, { Component } from "react";
-import SearchEmployees from "./components/SearchEmployees"
-import Employees from "./components/Employees"
-import employeesJSON from "./employees.json";
+import React, {Component} from 'react'
+import employeeList from './employeeList.json';
+import HomePage from './components/HomePage/HomePage.js'
 
+
+
+const filterEmployee = (searchText, maxResults) => {
+  return employeeList.filter((employee) => {
+    if (employee.data.name.toLowerCase().includes(searchText.toLowerCase())) {
+      return true;
+    }
+    return false;
+  }).slice(0, maxResults);
+}
+
+var maxResults = 4;
 
 class App extends Component {
 
-  state = {
-    employeesJSON
-  };
-  
 
-  render() {
-  return (
-    <div>
-     <SearchEmployees></SearchEmployees>
-     {this.state.employeesJSON.map(employee => (
-          <Employees
-            id={employee.id}
-            key={employee.id}
-            name={employee.name}
-            image={employee.image}
-            occupation={employee.occupation}
-            location={employee.location}
-          />
-        ))}
+      state = {
+            selectedEmployee: employeeList[0].data,
+            filteredEmployee: filterEmployee('', maxResults)
+        }
+    
 
-    </div>
-  );
-  }
+    onSearch = (event) => {
+        this.setState({
+            filteredEmployee: filterEmployee(event.target.value, maxResults)
+        });
+    }
+
+    onEmployeeClick = (employee) => {
+        this.setState({
+            selectedEmployee: {name: employee.name, info: employee.info, contact: employee.contact}
+        });
+    }
+
+    render() {
+        return (
+            <div>
+ <HomePage onSearch={this.onSearch} employeeData={this.state.filteredEmployee} />
+            </div>
+           
+        );
+    }
 }
 
 export default App;
+
