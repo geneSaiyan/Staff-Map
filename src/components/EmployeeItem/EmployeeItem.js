@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 
-class EmployeeListItem extends Component {
+class EmployeeItem extends Component {
 
     render() {
         const {name, image} = this.props.employee
@@ -26,4 +26,4 @@ class EmployeeListItem extends Component {
     }
 }
 
-export default EmployeeListItem
+export default EmployeeItem

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import employeeList from './employeeList.json';
-import HomePage from './components/HomePage/HomePage.js'
+import Search from './components/Search/Search.js'
 
 
 
@@ -39,7 +39,7 @@ class App extends Component {
     render() {
         return (
             <div>
- <HomePage onSearch={this.onSearch} employeeData={this.state.filteredEmployee} />
+ <Search onSearch={this.onSearch} employeeData={this.state.filteredEmployee} />
             </div>
            
         );

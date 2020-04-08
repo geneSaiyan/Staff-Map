@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import EmployeeList from '../EmployeeList/EmployeeList.js'
+import EmployeeContainer from '../EmployeeContainer/EmployeeContainer.js'
 
-class HomePage extends Component {
+class Search extends Component {
 
     onChange = (e) => this.props.onSearch(e)
 
@@ -17,10 +17,10 @@ class HomePage extends Component {
 
                     </div>
                 </div>
-                <EmployeeList employeeData={this.props.employeeData} onEmployeeClick={this.props.onEmployeeClick} />
+                <EmployeeContainer employeeData={this.props.employeeData} />
             </div>
         );
     }
 }
 
-export default HomePage
+export default Search

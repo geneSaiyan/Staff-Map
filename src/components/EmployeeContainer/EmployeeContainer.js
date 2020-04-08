@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import {TransitionMotion, spring, presets} from 'react-motion';
-import EmployeeListItem from '../EmployeeListItem/EmployeeListItem.js'
+import {TransitionMotion} from 'react-motion';
+import EmployeeItem from '../EmployeeItem/EmployeeItem.js'
 
 
-class EmployeeList extends Component {
+class EmployeeContainer extends Component {
 
     //Function used to render the employees from the employeejson file
     getEmployeeList = () => {
@@ -30,7 +30,7 @@ class EmployeeList extends Component {
             {styles =>
             <div>
                 {styles.map(({key, data}) =>
-                  <EmployeeListItem key={key}  employee={data}/>
+                  <EmployeeItem key={key}  employee={data}/>
                 )}
           </div>
             }
@@ -40,4 +40,4 @@ class EmployeeList extends Component {
     }
 }
 
-export default EmployeeList
+export default EmployeeContainer
