@@ -10,7 +10,7 @@ var styles = {
 class EmployeeItem extends Component {
 
   render() {
-    const { name, occupation, image } = this.props.employee
+    const { name, occupation, phone, email, image } = this.props.employee
 
     return (
 
@@ -19,8 +19,8 @@ class EmployeeItem extends Component {
           <img alt={this.props.name} src={image} class="card-img-top" />
           <div class="card-body">
             <h5 class="card-title">{name} - {occupation}</h5>
-            <p class="card-text"></p>
-            
+            <p class="card-text">Phone: {phone}</p>
+            <p class="card-text">Email: {email}</p>
           </div>
         </div>
       </div>
