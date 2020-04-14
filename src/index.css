@@ -1,0 +1,13 @@
+.search-background{
+    background: url("./assets/searchbackground.jpg") no-repeat center center ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+body { 
+    background:  url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif) no-repeat center center fixed; 
+    background-size: cover;
+  }

@@ -28,5 +28,37 @@
             "phone": "903-627-3922",
             "email": "gohan@dbz.com"
         }
+    },
+    {
+        "key": "4",
+        "data": {
+            "name": "Majin Buu",
+            "image": "https://static.miraheze.org/swallowedwholewiki/thumb/e/e8/Majin_Buu.png/300px-Majin_Buu.png",
+            "occupation": "Tester",
+            "phone": "733-233-1000",
+            "email": "buu@dbz.com"
+        }
+    },
+    {
+        "key": "5",
+        "data": {
+            "name": "Broly",
+            "image": "https://dotandline.net/wp-content/uploads/2019/01/1ux08ON3fMBSROa1GqJIh-Q.png",
+            "occupation": "Account Manager",
+            "phone": "347-900-4859",
+            "email": "broly@dbz.com"
+        }
+    },
+    {
+        "key": "6",
+        "data": {
+            "name": "Jiren",
+            "image": "https://pbs.twimg.com/profile_images/956666193590530049/mjSYtlZG.jpg",
+            "occupation": "Senior Consultant",
+            "phone": "688-111-0348",
+            "email": "jiren@dbz.com"
+        }
     }
+
+    
 ]

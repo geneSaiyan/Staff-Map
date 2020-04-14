@@ -9,9 +9,9 @@ class Search extends Component {
         return (
 
             <div>
-                <div className="jumbotron jumbotron-fluid">
+                <div className="jumbotron jumbotron-fluid search-background">
                     <div className="container">
-                        <h1 className="display-4">Welcome to STAFF Map</h1>
+                        <h1 style={{color: "gold"}}><i>Welcome to STAFF Map</i></h1>
                         <p className="lead">Search for members of your staff by name.</p>
                         <input type="text" onChange={this.onChange} placeholder="Search by Name" className="form-control" id="empName" aria-describedby="employee name" />
 

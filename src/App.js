@@ -13,7 +13,7 @@ const filterEmployee = (searchText, maxResults) => {
   }).slice(0, maxResults);
 }
 
-var maxResults = 4;
+var maxResults = 6;
 
 class App extends Component {
 
